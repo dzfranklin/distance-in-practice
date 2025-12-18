@@ -1,0 +1,3 @@
+https://medium.com/@iandjames/mapping-my-story-40-years-at-ordnance-survey-205cd6868e23
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.CubicHermiteSpline.html
+https://labs.os.uk/public/os-data-hub-examples/os-maps-api/zxy-27700-basic-map#leaflet
