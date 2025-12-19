@@ -196,12 +196,19 @@ def annotate_image(image_path, geojson_path=None):
         ax.imshow(im, extent=rasterio.plot.plotting_extent(src))
 
         # Plot existing segments
-        colors = ["purple", "red", "blue", "green", "orange", "cyan", "magenta", "yellow"]
+        colors = ["pink", "red", "green", "orange", "cyan", "magenta", "yellow"]
         for idx, segment in enumerate(existing_segments):
             xs = [point[0] for point in segment]
             ys = [point[1] for point in segment]
-            ax.plot(xs, ys, 'o-', color=colors[idx % len(colors)],
-                   markersize=8, markeredgewidth=1, alpha=0.5)
+            ax.plot(
+                xs,
+                ys,
+                "o-",
+                color=colors[idx % len(colors)],
+                markersize=3,
+                markeredgewidth=1,
+                alpha=0.8,
+            )
 
         # Get meters per pixel from the transform
         # src.transform[0] is the pixel width in the CRS units
